@@ -11,10 +11,10 @@ export const siteContent = {
     text: "Sou um desenvolvedor apaixonado por criar interfaces que unem estética e usabilidade...",
   },
   skills: [
-    { name: "React/Next.js", level: "Avançado" },
-    { name: "JavaScript (ES6+)", level: "Avançado" },
-    { name: "CSS/Tailwind/Modules", level: "Avançado" },
-    { name: "UI/UX Design", level: "Intermediário" },
+    { name: "React/Next.js"},
+    { name: "JavaScript (ES6+)"},
+    { name: "CSS/Modules"},
+    { name: "UI/UX Design"},
   ],
   projects: [
     {

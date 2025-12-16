@@ -1,8 +1,8 @@
 'use client'; // Client Component pois precisa de estado (Menu Mobile)
 
 import { useState, useEffect } from 'react';
-import styles from './header.module.css';
-import { siteContent } from '@/data/content';
+import styles from './Header.module.css';
+import { siteContent } from '../../data/content';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);

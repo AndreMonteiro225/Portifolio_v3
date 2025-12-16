@@ -1,5 +1,7 @@
 /* Design System: Tokens Globais */
 :root {
+  /* Assumindo que você definiu --font-clash no layout.js, usamos ela aqui. 
+     Se você usou outro nome ou fonte do Google, ele virá via essa variável. */
   --font-primary: var(--font-clash), sans-serif;
   --font-secondary: system-ui, -apple-system, sans-serif;
 
@@ -26,8 +28,14 @@ body {
   overflow-x: hidden;
   background-color: var(--color-bg);
   color: var(--color-text-primary);
-  font-family: var(--font-secondary);
+  /* APLICAÇÃO GLOBAL DA FONTE PRIMÁRIA */
+  font-family: var(--font-primary); 
   scroll-behavior: smooth;
+}
+
+/* Se quiser garantir que títulos tenham a fonte, embora o body já herde */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
 }
 
 a {
