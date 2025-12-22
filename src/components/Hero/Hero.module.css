@@ -75,13 +75,30 @@
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
+.title::after {
+  content: '';
+  display: block;
+  width: 44.7vw;
+  height: 4px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
 
 .description {
   color: var(--color-text-secondary);
-  font-size: 1.125rem;
+  font-size: 1.255rem;
   max-width: 500px;
   margin-bottom: 2.5rem;
   line-height: 1.6;
+  font-weight: 600;
+}
+.description::after {
+  content: '';
+  display: block;
+  width: 40vw;
+  height: 2px;
+  background: yellow;
+  border-radius: 2px;
 }
 
 .actions {
