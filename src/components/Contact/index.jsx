@@ -1,5 +1,9 @@
 import styles from './Contact.module.css';
 import { siteContent } from '@/data/content';
+import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 
 export default function Contact() {
   const { social } = siteContent;
@@ -21,6 +25,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className={`${styles.btn} ${styles.whatsapp}`}
             >
+              <FaWhatsapp />
               WhatsApp
             </a>
             <a 
@@ -29,6 +34,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className={`${styles.btn} ${styles.linkedin}`}
             >
+              <FaLinkedin />
               LinkedIn
             </a>
             <a 
@@ -37,6 +43,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className={`${styles.btn} ${styles.github}`}
             >
+              <FaGithub />
               GitHub
             </a>
           </div>

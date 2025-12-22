@@ -7,7 +7,6 @@ import { siteContent } from '../../data/content';
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Efeito para mudar o background do header ao rolar
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);

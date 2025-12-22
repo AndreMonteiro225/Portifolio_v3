@@ -1,28 +1,34 @@
 import { useState, useEffect } from 'react';
 
-export default function useOnScreen(ref, rootMargin = '10px') {
+export default function useOnScreen(ref) {
   const [isIntersecting, setIntersecting] = useState(false);
 
   useEffect(() => {
+    // Captura o valor atual da ref para garantir a limpeza correta no return
+    const element = ref.current;
+    if (!element) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIntersecting(entry.isIntersecting);
+        // Apenas ativa se estiver interceptando
+        if (entry.isIntersecting) {
+          setIntersecting(true);
+          // Opcional: Desconecta o observer para que a animação rode apenas uma vez e não resete
+          observer.disconnect(); 
+        }
       },
       {
-        rootMargin,
+        threshold: 0.1, // Alternativa: dispara quando 10% do elemento estiver visível
+        rootMargin: '-100px', // Dispara quando o elemento avançar 100px para dentro da tela
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    observer.observe(element);
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
+      observer.disconnect();
     };
-  }, [ref, rootMargin]);
+  }, [ref]);
 
   return isIntersecting;
 }

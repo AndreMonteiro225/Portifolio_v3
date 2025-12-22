@@ -10,7 +10,6 @@ export default function About() {
         <div className={styles.content}>
           <h2 className="title">{title}</h2>
           <div className={styles.textWrapper}>
-            {/* Renderiza parágrafos se for um array, ou texto simples */}
             <p className={styles.text}>{text}</p>
           </div>
         </div>

@@ -10,7 +10,7 @@ export default function Projects() {
   const isVisible = useOnScreen(ref);
 
   return (
-    <section id="projects" className="section" ref={ref}>
+    <section id="projects" className={`${styles.projects} ${styles.section}`} ref={ref}>
       <div className="container">
         <h2 className="title">Alguns de meus projetos</h2>
         
@@ -26,7 +26,7 @@ export default function Projects() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className={styles.overlay}>
-                  <a href={project.link} className={styles.viewBtn}>Ver Projeto</a>
+                  <a href={project.link} target="_blank" className={styles.viewBtn}>Ver Projeto</a>
                 </div>
               </div>
               <div className={styles.info}>

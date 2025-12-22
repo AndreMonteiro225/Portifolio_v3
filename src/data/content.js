@@ -25,29 +25,44 @@ export const siteContent = {
   projects: [
     {
       id: 1,
-      title: "Agência de Viagens",
-      category: "Landing Page",
-      image: "/1.71MB_site_viagens.webp",
-      link: "#",
+      title: "Barbearia do Johnny",
+      category: "Landing Page | Ranqueamento no google e gestão de tráfego",
+      image: "/print_screen_barbearia.webp.webp",
+      link: "https://barbeariadojohnny.com.br/",
     },
     {
       id: 2,
-      title: "Restaurante Gourmet",
-      category: "Web App",
-      image: "/1.36MB_restaurante.webp",
-      link: "#",
+      title: "Topoleasing",
+      category: "Site informativo com contato",
+      image: "/topoleasing_img.webp",
+      link: "https://topoleasing.vercel.app/",
     },
     {
       id: 3,
+      title: "Restaurante Gourmet",
+      category: "Cardápio Online",
+      image: "/1.36MB_restaurante.webp",
+      link: "https://cardapio-para-restaurante.vercel.app/",
+    },
+    {
+      id: 4,
       title: "Agência de Design",
-      category: "Institucional",
+      category: "Landing page simples",
       image: "/1.29MB_agencia_design.webp",
-      link: "#",
+      link: "https://agencia-design-digital-mu.vercel.app/",
+    },
+    {
+      id: 5,
+      title: "Sorveteria Delícia Gelada",
+      category: "Landing page simples",
+      image: "/269KB_sorveteria.webp",
+      link: "https://spa-sorveteria-iota.vercel.app/",
     },
   ],
+
   social: {
-    linkedin: "https://linkedin.com/in/seu-usuario",
-    github: "https://github.com/seu-usuario",
+    linkedin: "https://www.linkedin.com/in/andr%C3%A9-monteiro-rachel-3a0429240/",
+    github: "https://github.com/AndreMonteiro225",
     whatsapp: "https://wa.me/5511988844661",
   }
 };

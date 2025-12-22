@@ -22,6 +22,7 @@
   background-color: rgba(0, 0, 0, 0.6); /* Overlay escuro */
   z-index: 1;
   animation: contentSlide 1.5s forwards;
+  
 }
 
 @keyframes contentSlide {
@@ -127,6 +128,11 @@
       background-attachment: scroll;
 
   }
+  .hero::before {
+    width: 100vw;
+    height: 50vh;
+    top: 18vh;
+  }
   .content {
     grid-template-columns: 1fr;
     text-align: center;
@@ -140,4 +146,5 @@
   .description {
     margin: 0 auto 2.5rem;
   }
+
 }
