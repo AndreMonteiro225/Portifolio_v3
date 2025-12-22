@@ -3,9 +3,11 @@ import { siteContent } from '../../data/content';
 
 export default function Skills() {
   return (
-    <section id="skills" className="section">
+    <section id="skills" className={`section ${styles.section} ${styles.skillsSection}`}>
       <div className="container">
+        <div className={styles.header}>
         <h2 className="title">Habilidades</h2>
+        </div>
         
         <div className={styles.grid}>
           {siteContent.skills.map((skill, index) => (

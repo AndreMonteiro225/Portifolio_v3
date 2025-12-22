@@ -5,7 +5,7 @@ export default function About() {
   const { title, text } = siteContent.about;
 
   return (
-    <section id="about" className="section">
+    <section id="about" className={`section ${styles.section} ${styles.aboutSection}`}>
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
           <h2 className="title">{title}</h2>

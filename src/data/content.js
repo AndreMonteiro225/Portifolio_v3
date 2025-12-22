@@ -1,14 +1,13 @@
-// Centralizamos os dados para facilitar a manutenção futura sem mexer no código
 export const siteContent = {
   hero: {
     title: "André Monteiro",
     subtitle: "Desenvolvedor Full-Stack & UI Designer",
     description: "Especializado em Gestão de tráfego e em experiências digitais únicas.",
-    image: "/9.96MB_hero_SEO.webp", // Caminho baseado na pasta public
+    image: "/9.96MB_hero_SEO.webp", 
   },
   about: {
     title: "Sobre Mim",
-    text: "Sou um desenvolvedor apaixonado por criar interfaces que unem estética e usabilidade...",
+    text: "Sou um desenvolvedor Full-Stack capaz de criar interfaces que unem estética e usabilidade. Com experiência em gestão de tráfego e SEO, busco sempre entregar soluções que não só encantam visualmente, mas também performam excepcionalmente bem no ambiente digital. Minha paixão é transformar ideias em experiências digitais impactantes.",
   },
   skills: [
     { name: "React/Next.js"},
