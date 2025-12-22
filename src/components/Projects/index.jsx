@@ -1,14 +1,20 @@
+'use client';
 import Image from 'next/image';
+import { useRef } from 'react';
+import useOnScreen from '../../hooks/useOnScreen';
 import styles from './Projects.module.css';
 import { siteContent } from '../../data/content';
 
 export default function Projects() {
+  const ref = useRef();
+  const isVisible = useOnScreen(ref);
+
   return (
-    <section id="projects" className="section">
+    <section id="projects" className="section" ref={ref}>
       <div className="container">
-        <h2 className="title">Projetos Selecionados</h2>
+        <h2 className="title">Alguns de meus projetos</h2>
         
-        <div className={styles.grid}>
+        <div className={`${styles.grid} ${isVisible ? styles.visible : ''}`}>
           {siteContent.projects.map((project) => (
             <article key={project.id} className={styles.card}>
               <div className={styles.imageContainer}>

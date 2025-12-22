@@ -20,7 +20,7 @@ export default function Hero() {
         </div>
         
         <div className={styles.imageWrapper}>
-           {/* Priority true é crucial para o LCP (Largest Contentful Paint) no Hero */}
+           
           <Image 
             src={image} 
             alt={`Banner de ${title}`}

@@ -2,9 +2,9 @@
 export const siteContent = {
   hero: {
     title: "André Monteiro",
-    subtitle: "Desenvolvedor Front-end & UI Designer",
-    description: "Criando experiências digitais únicas e funcionais.",
-    image: "/1.07MB_banner.webp", // Caminho baseado na pasta public
+    subtitle: "Desenvolvedor Full-Stack & UI Designer",
+    description: "Especializado em Gestão de tráfego e em experiências digitais únicas.",
+    image: "/9.96MB_hero_SEO.webp", // Caminho baseado na pasta public
   },
   about: {
     title: "Sobre Mim",
@@ -15,6 +15,12 @@ export const siteContent = {
     { name: "JavaScript (ES6+)"},
     { name: "CSS/Modules"},
     { name: "UI/UX Design"},
+    { name: "git/GitHub"},
+    { name: "Node.js"},
+    { name: "SQL/MySQL"},
+    { name: "Google Ads" },
+    { name: "Meta Ads" },
+    { name: "SEO" },
   ],
   projects: [
     {
