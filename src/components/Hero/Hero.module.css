@@ -1,10 +1,12 @@
 .hero {
-  min-height: 100dvh; /* Altura total moderna */
+  min-height: 100dvh;
+  /* Altura total moderna */
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: 80px; /* Espaço para o header */
+  padding-top: 80px;
+  /* Espaço para o header */
   background-image: url("/1.07MB_banner.webp");
   background-size: cover;
   background-position: center;
@@ -19,24 +21,26 @@
   left: 0;
   width: 80vw;
   height: 65vh;
-  background-color: rgba(0, 0, 0, 0.6); /* Overlay escuro */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Overlay escuro */
   z-index: 1;
   animation: contentSlide 1.5s forwards;
-  
+
 }
 
 @keyframes contentSlide {
-  
 
-    0% {
-      transform: translateX(-50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
   }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 .content {
   display: grid;
@@ -75,6 +79,7 @@
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
+
 .title::after {
   content: '';
   display: block;
@@ -92,6 +97,7 @@
   line-height: 1.6;
   font-weight: 600;
 }
+
 .description::after {
   content: '';
   display: block;
@@ -103,14 +109,35 @@
 
 .actions {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
+.iconContainer { 
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 1rem;
+  transition: color 0.2s;
+}
+.iconContainer svg{ 
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-accent);
+}
+  .actions:hover {
+  color: var(--color-text-primary);
+}
 
-.primaryBtn, .secondaryBtn {
+
+.primaryBtn,
+.secondaryBtn {
   padding: 1rem 2rem;
   border-radius: 50px;
   font-weight: 500;
   transition: transform 0.2s;
+  width: 20rem;
 }
 
 .primaryBtn {
@@ -120,56 +147,60 @@
 
 .secondaryBtn {
   border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.primaryBtn:hover, .secondaryBtn:hover {
+.primaryBtn:hover,
+.secondaryBtn:hover {
   transform: translateY(-2px);
 }
 
 .imageWrapper {
   position: relative;
-  width: 100%;
+  max-width: 600px;
   display: flex;
   justify-content: center;
 }
 
 .image {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    object-fit: cover;
-    border-radius: 22px;
-    
+  width: clamp(360px, calc(30vw + 60px), 600px);
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 22px;
+
 }
-    
-    
-.image img{
-    object-fit: cover;
-    
+
+
+.image img {
+  object-fit: cover;
+  border-radius: 22px;
 }
 
 
 @media (max-width: 768px) {
 
-  .hero{
-      background-attachment: scroll;
+  .hero {
+    background-attachment: scroll;
 
   }
+
   .hero::before {
     width: 100vw;
-    height: 50vh;
-    top: 18vh;
+    height: 68vh;
+    top: 8vh;
   }
+
   .content {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 3rem;
   }
-  
+
   .actions {
     justify-content: center;
   }
-  
+
   .description {
     margin: 0 auto 2.5rem;
   }

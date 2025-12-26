@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import styles from './Hero.module.css';
 import { siteContent } from '@/data/content';
+import Link from 'next/link';
+import { GoProjectSymlink } from "react-icons/go";
+import { RiContactsBook3Line } from "react-icons/ri";
+import { FaRegQuestionCircle } from "react-icons/fa";
+
 
 export default function Hero() {
   const { title, subtitle, description, image } = siteContent.hero;
@@ -14,8 +19,9 @@ export default function Hero() {
           <p className={styles.description}>{description}</p>
           
           <div className={styles.actions}>
-            <a href="#projects" className={styles.primaryBtn}>Ver Projetos</a>
-            <a href="#contact" className={styles.secondaryBtn}>Entrar em Contato</a>
+            <Link href="#projects" className={styles.primaryBtn}>Por que meu trabalho é valioso para o seu negócio? <div className={styles.iconContainer}><FaRegQuestionCircle /></div></Link>
+            <Link href="#projects" className={styles.secondaryBtn}>Ver Projetos<div className={styles.iconContainer}><GoProjectSymlink/></div></Link>
+            <Link href="#contact" className={styles.secondaryBtn}>Entrar em Contato<div className={styles.iconContainer}><RiContactsBook3Line /></div></Link>
           </div>
         </div>
         
