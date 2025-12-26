@@ -31,7 +31,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 2rem 1rem;
-  /* margin: 0 auto; */
 }
 
 .grid {
@@ -42,6 +41,9 @@
   transition: all 0.3s ease;
   }
 
+  .grid h2 {
+    grid-column: 1 / -1;
+  }
 .visible .card {
     animation: contentSlide 0.5s ease-out forwards;
   }
