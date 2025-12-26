@@ -23,7 +23,7 @@ export default function Header() {
         </div>
         
         <nav className={styles.nav}>
-          <a href="#hero">Início</a>
+          <a href="/">Início</a>
           <a href="#projects">Projetos</a>
           <a href="#about">Sobre</a>
           <a href="#contact" className={styles.contactBtn}>Contato</a>

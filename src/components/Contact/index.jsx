@@ -18,7 +18,7 @@ export default function Contact() {
             Entre em contato para discutirmos seu próximo projeto.
           </p>
 
-          <div className={styles.links}>
+          <div className={`${styles.links}`} style={{zIndex: '2'}}>
             <a 
               href={social.whatsapp} 
               target="_blank" 
@@ -48,9 +48,7 @@ export default function Contact() {
             </a>
           </div>
           
-          <footer className={styles.footer}>
-            <p>&copy; {new Date().getFullYear()} André Monteiro. Todos os direitos reservados.</p>
-          </footer>
+
         </div>
       </div>
     </section>

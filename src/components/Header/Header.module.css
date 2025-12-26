@@ -7,6 +7,7 @@
   transition: all 0.3s ease;
   padding: 1.5rem 0;
   background: transparent;
+
 }
 
 .scrolled {
@@ -20,6 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 6vh;
 }
 
 .logo {
@@ -35,7 +37,7 @@
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
 }
 

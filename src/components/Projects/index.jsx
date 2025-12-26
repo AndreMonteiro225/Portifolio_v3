@@ -12,9 +12,9 @@ export default function Projects() {
   return (
     <section id="projects" className={`${styles.projects} ${styles.section}`} ref={ref}>
       <div className="container">
-        <h2 className="title">Alguns de meus projetos</h2>
         
         <div className={`${styles.grid} ${isVisible ? styles.visible : ''}`}>
+        <h2 className="title" style={{ zIndex: '1' }}>Alguns de meus projetos</h2>
           {siteContent.projects.map((project) => (
             <article key={project.id} className={styles.card}>
               <div className={styles.imageContainer}>

@@ -1,0 +1,208 @@
+.pageWrapper {
+  padding-top: 80px; /* Compensa o header fixo */
+  min-height: 100vh;
+  background-image: url("/913KB_hero_sistemas.webp"); /* Reutilizando um bg existente que combina */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Overlay escuro para melhorar legibilidade */
+.pageWrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 11, 11, 0.92);
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+/* Header da Página */
+.heroSection {
+  text-align: center;
+  margin-bottom: 5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainTitle {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  background: linear-gradient(to right, var(--color-text-primary), var(--color-text-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.introText {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.introHighlight {
+  font-size: 1.25rem;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  margin-top: 2rem;
+  display: block;
+}
+
+/* Cards dos Pilares */
+.pillarsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 6rem;
+}
+
+.pillarCard {
+  background: rgba(39, 34, 34, 0.4); /* Baseado na var(--color-surface) mas com transparência */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.pillarCard:hover {
+  border-color: var(--color-text-secondary); /* Dourado */
+  transform: translateY(-5px);
+}
+
+.pillarTitle {
+  font-size: 1.75rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.pillarContent {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.highlightBox {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--color-accent); /* Azul elétrico */
+}
+
+.highlightLabel {
+  display: block;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.highlightText {
+  color: #bbb;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Seção Diferencial */
+.differentialSection {
+  background: linear-gradient(145deg, rgba(39, 34, 34, 0.6), rgba(0, 0, 0, 0.8));
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid var(--color-text-secondary);
+  box-shadow: 0 0 30px rgba(243, 182, 26, 0.1); /* Brilho dourado sutil */
+}
+
+.diffTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-primary);
+}
+
+.diffContent {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.noiseElimination {
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.listTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-primary);
+}
+
+.featuresList {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.featuresList li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #ddd;
+}
+
+.featuresList li::before {
+  content: '✓';
+  color: var(--color-accent);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.finalConclusion {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+  .pageWrapper {
+    padding-top: 60px;
+  }
+  
+  .container {
+    padding-top: 2rem;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .pillarCard {
+    padding: 1.5rem;
+  }
+
+  .differentialSection {
+    padding: 1.5rem;
+  }
+}

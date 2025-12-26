@@ -19,7 +19,7 @@ export default function Hero() {
           <p className={styles.description}>{description}</p>
           
           <div className={styles.actions}>
-            <Link href="#projects" className={styles.primaryBtn}>Por que meu trabalho é valioso para o seu negócio? <div className={styles.iconContainer}><FaRegQuestionCircle /></div></Link>
+            <Link href="/aboutSeoPage" className={styles.primaryBtn}>Por que meu trabalho é valioso para o seu negócio? <div className={styles.iconContainer}><FaRegQuestionCircle /></div></Link>
             <Link href="#projects" className={styles.secondaryBtn}>Ver Projetos<div className={styles.iconContainer}><GoProjectSymlink/></div></Link>
             <Link href="#contact" className={styles.secondaryBtn}>Entrar em Contato<div className={styles.iconContainer}><RiContactsBook3Line /></div></Link>
           </div>
