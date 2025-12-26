@@ -116,15 +116,14 @@
   gap: 1rem;
 }
 .iconContainer { 
-  display: flex;
-  align-items: center;
-  justify-content:center;
   gap: 1rem;
   transition: color 0.2s;
 }
 .iconContainer svg{ 
-  width: 1.5rem;
-  height: 1.5rem;
+  
+
+  width: 1.3rem;
+  height: 1.3rem;
   color: var(--color-accent);
 }
   .actions:hover {
@@ -134,15 +133,19 @@
 
 .primaryBtn,
 .secondaryBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem 2rem;
   border-radius: 50px;
-  font-weight: 500;
+  font-weight: 700;
   transition: transform 0.2s;
   width: 20rem;
+
 }
 
 .primaryBtn {
-  background: var(--color-text-primary);
+  background: rgb(255, 215, 0, 0.8);
   color: var(--color-bg);
 }
 

@@ -46,7 +46,7 @@
 }
 
 .introText {
-  font-size: 1.125rem;
+  font-size: 1.35rem;
   line-height: 1.8;
   color: #ccc;
   margin-bottom: 1.5rem;
@@ -54,7 +54,9 @@
 }
 
 .introHighlight {
-  font-size: 1.25rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  
   color: var(--color-text-primary);
   font-weight: 600;
   margin-top: 2rem;
@@ -83,14 +85,14 @@
 }
 
 .pillarTitle {
-  font-size: 1.75rem;
+  font-size: 2rem;
   color: var(--color-text-secondary);
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
 .pillarContent {
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   color: #ddd;
   margin-bottom: 2rem;
   line-height: 1.7;
@@ -109,12 +111,12 @@
   font-weight: 700;
   color: var(--color-text-primary);
   margin-bottom: 0.5rem;
-  font-size: 1.05rem;
+  font-size: 1.45rem;
 }
 
 .highlightText {
   color: #bbb;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
 }
 
